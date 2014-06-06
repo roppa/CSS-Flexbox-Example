@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+	<title>Flexgrid example</title>
+	<style type="text/css">
+
+		body {
+			width: 60%;
+			margin: 50px auto 50px auto; 
+		}
+
+		section {
+			display: flex;
+			flex-direction: row;
+			flex-flow: row wrap;
+		}
+
+		/* parent, flex container */
+		.group {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			flex-flow: inherit;
+		}
+
+		/* children, flex items */
+		article {
+			-webkit-flex: 1 1 auto;
+			flex: 1 1 auto;
+			position: relative;
+			width: 96%;
+			margin: 1%;
+		}
+
+		article h1 {
+			position: absolute;
+			bottom: 0;
+			background-color: #5DC3C6;
+			width: 93%;
+			margin: 0;
+			padding: 3% 3% 7% 4%;
+			font-size: 0.82em;
+			line-height: 1.4em;
+			color: white;
+			text-align: center;
+		}
+
+		article img {
+			width: 100%;
+			display: block;
+		}
+
+		article:nth-child(2), article:nth-child(3) {
+			width: 48%;
+			flex: inherit;
+		}
+
+		.group:nth-child(4n-1) article:nth-child(2), .group:nth-child(4n-2) article:nth-child(2) {
+			order: -2;
+		}
+
+		.group:nth-child(4n-1) article:nth-child(3), .group:nth-child(4n-2) article:nth-child(3) {
+			order: -1;
+		}
+
+		.sight {
+			background-color: red;
+		}
+
+		.gallery {
+			background-color: green;
+		}
+
+	</style>
+</head>
+<body>
+
+<section>
+
+	<div class="group">
+		<article class="event">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="gallery">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="sight">
+			<h1>Heading | test</h1>
+			<div>
+				<p>This is a test bit of stuff</p>
+			</div>
+		</article>
+	</div>
+	<div class="group">
+		<article class="event">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="gallery">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="sight">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+	</div>
+	<div class="group">
+		<article class="event">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="gallery">
+			<h1>Heading | test</h1>
+			<div>
+				<p>This is a test bit of stuff</p>
+			</div>
+		</article>
+
+		<article class="sight">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+	</div>
+	<div class="group">
+		<article class="event">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="gallery">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+
+		<article class="sight">
+			<h1>Heading | test</h1>
+			<div>
+				<img src="water-and-sky.jpg">
+			</div>
+		</article>
+	</div>
+	</section>
+
+</body>
+</html>
