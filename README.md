@@ -1,3 +1,5 @@
+## CSS Flexbox
+
 This article was first written 4 years ago. Since then flex has become standard in things like react native. I had moved away from front end stuff only to come back to work on a react native app so had to start flexing again.
 
 Let's be honest, CSS float layouts were a nightmare. Absolute and relative positioned things we won't say anything about. And ```display: table``` just feels really dirty. I mean **really** dirty. Especially when you started out using tables for layouts (I even felt dirty doing that, even though others felt it was fine).
